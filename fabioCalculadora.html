@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>calculadora Fabio dias</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+		function somar (A,B){
+		A = parseFloat(A);
+		B = parseFloat(B);		
+		var somar = A+B;
+		document.getElementById('resultado').value = somar;    
+           
+		}
+		function subtrair (A,B){
+		A = parseFloat(A);
+		B = parseFloat(B);		
+		var subtrair = A-B;
+		document.getElementById('resultado').value = subtrair;   
+		}
+		function dividir (A,B){
+		A = parseFloat(A);
+		B = parseFloat(B);		
+		var dividir = A/B;
+		document.getElementById('resultado').value = dividir;   
+		}
+		function multiplicar (A,B){
+		A = parseFloat(A);
+		B = parseFloat(B);		
+		var multiplicar = A*B;
+		document.getElementById('resultado').value = multiplicar;   
+		}
+</script>   
+<body background="hacker.jpg">
+<center>
+	<br> <br> <br><br> <br> <br><br> <br> <br>
+	<table border="05" bgcolor="#7B7970">
+		<td align="center">
+	<div class="w3-container">
+		<h1>++++++++Calculator Fabio Dias+++++++++++ </h1>
+		<img src="hacker.jpg" width="200" height="200">
+		<h4> Let's Go Baby Java na  Veia? </h4>
+		<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large"> Let's Run Aqui é  Java !
+		</button>
+	</td>
+	</table>
+	<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="hacker.jpg" style="width:30%">
+      </div>
+
+      <form name ="f"class="w3-container">
+        <div class="w3-section">
+	<h2> Testing Virus Java!</h2>
+		<label for="v1">Amount One: </label></br>
+		<input type="number" name="v1" class="w3-input w3-border" step="0,03"></br>
+	</p>
+	<p>
+		<label for="v2">Amount Two 2: </label></br>
+		<input type="number" name="v2" class="w3-input w3-border" step="0,03"></br>
+	</p>
+		  <div class="w3-container">
+			<h2> Select Here Your Operation For This   Magic Calculator  : </h2>
+			<button style="width:40%; height:40px" type="button" onclick="somar(document.f.v1.value,document.f.v2.value);" class="w3-blue" > Add</button>
+			<button style="width:40%; height:40px" type="button" onclick="subtrair(document.f.v1.value,document.f.v2.value);" class="w3-red" > Subtract </button>
+			<button style="width:40%; height:40px" type="button" onclick="dividir(document.f.v1.value,document.f.v2.value);" class="w3-green" > Divide </button>
+			<button style="width:40%; height:40px" type="button" onclick="multiplicar(document.f.v1.value,document.f.v2.value);" class="w3-yellon" > Multiply </button>
+		  </div>
+		  <label for="v3">Result </label></br>
+		<input id="resultado" type="number" name="v3" readonly="true" step="0,01"></br>
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-purple">Come Back Baby aqui é  Java </button>
+      </div>
+	  
+	
+    </div>
+  </div>
+</div>
+</center>   
+</body>
+</html>
